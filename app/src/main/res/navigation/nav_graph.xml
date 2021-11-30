@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.davaleban4.fragments.FragmentOne"
+        tools:layout="@layout/fragment_one"
+        android:label="FragmentOne" />
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.davaleban4.fragments.FragmentTwo"
+        tools:layout="@layout/fragment_two"
+        android:label="FragmentTwo">
+
+
+        <argument android:name="amount"
+            android:defaultValue="-1"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.davaleban4.fragments.FragmentThree"
+        tools:layout="@layout/fragment_three"
+        android:label="FragmentThree" />
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.davaleban4.fragments.FragmentFour"
+        tools:layout="@layout/fragment_four"
+        android:label="FragmentFour" />
+</navigation>
